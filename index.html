@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>    
+    <link rel="stylesheet" href="ToDoList.css">
+    <link rel="shortcut icon" href="img/checklist.png" type="image/png">
+</head>
+
+<body>
+    <div class="body">                
+        <div class="header">
+            
+            <span class="title">To Do List</span>
+            <button class="clear">
+                <i class="fa-solid fa-rotate-right" title="Clear"></i>
+            </button>            
+        </div> 
+        
+        <!--
+        <div class="date">
+            <div class="time"></div>
+        </div>
+        <div class="progressbar"></div>
+        -->
+
+        <form class="uppergrid">
+            <input type="text" class="taskinput" placeholder="Add a new task..." required>          
+            <button type="submit" class="submit">
+                <i class="fa-solid fa-circle-plus" title="Submit"></i>
+            </button>
+        </form>
+
+        <div class="lowergrid">
+            <ul class="tasklist">
+            </ul>
+        </div>
+    </div>
+
+    <script src="ToDoList.js"></script>
+    <!-- Font Awesome Icon -->
+    <script src="https://kit.fontawesome.com/0f247ccc67.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
