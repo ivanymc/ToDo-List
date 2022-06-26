@@ -1,0 +1,188 @@
+/* Global */
+:root {
+    --dark: #303030;
+    --darker: #202124;
+    --darkest: #111111;
+    --grey: #687280;
+    --button-checked: #1cbb27;
+    --button: #b3f8bd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: var(--darker);
+    color: #FFF;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    /* Center div */
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+i {
+    cursor: pointer;
+    color: var(--button);
+}
+
+i:hover {
+    color: var(--button-checked);
+}
+
+.tooltip {  
+    position: absolute;
+    display: block;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--dark);
+    color: #FFF;
+    padding: 8px;
+    border-radius: 3px;
+
+    /*
+    opacity: 0; 
+    */
+}
+
+.tooltip:hover {
+    opacity: 1;
+}
+
+
+/* HEADER */
+.header {
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0.8rem;    
+}
+
+/*
+.date {
+    flex: extend shrink % 
+    flex: 1 0 25%;
+    padding-right: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+}
+*/
+
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.25rem;
+    flex: 0 1 100%;
+}
+
+.clear {
+    flex: 0 0 5%;
+}
+
+.clear > i {
+    font-size: 1.3rem;
+}
+
+
+/* Date */
+.date {
+    font-size: 1.1rem;
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 1.1rem; 
+}
+
+.time {
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem; 
+}
+
+
+/* Input */
+.uppergrid {
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.5rem;    
+}
+
+.taskinput {
+    /* browser automatically gives input a width */
+    background-color: var(--darker);
+    min-width: 0;   
+    border: 3px solid white;
+    border-radius: 1rem;
+    height: 3.5rem;
+    margin-right: 0.75rem;
+    flex: 95%;
+    padding-left: 0.75rem;
+}
+
+.submit {
+    flex: 5%;
+}
+
+.submit > i {
+    font-size: 1.3rem;
+}
+
+
+/* Task List */
+.lowergrid {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.tasklist {
+    list-style: none;
+    padding-left: 3px;   
+    margin: 0;
+   
+}
+
+.taskitems {
+    display: flex;
+    margin-bottom: 1.3rem;
+}
+
+.checkbox {
+    flex: 1%;
+}
+
+.task {
+    flex: 95%;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    font-size: 1.2rem;
+}
+    
+
+.delete {
+    flex: 5%;
+}
+
+
+
