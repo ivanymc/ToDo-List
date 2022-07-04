@@ -43,11 +43,11 @@ function addToDo(task, id, check, trash) {
         let lineThrough = check ? "text-decoration: line-through" : "";
         let opacity = check ? "opacity: 0.5" : "opacity: 1";     
         let text = `
-                    <li class="taskitems" id="${id}">
+                    <li class="taskitems" id="${id}" style="${opacity}">
                         <button class="checkbox">
                             <i class="fa-regular ${done}" title="Check" id="${id}"></i>
                         </button>
-                        <span class="task" style="${lineThrough}; ${opacity}"> ${task} </span>
+                        <span class="task" style="${lineThrough}"> ${task} </span>
                         <button class="delete">
                             <i class="${DELETE_ICON}" title="Delete" id="${id}"></i>
                         </button>
